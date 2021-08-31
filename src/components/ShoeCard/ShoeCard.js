@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-
 import { COLORS, WEIGHTS } from '../../constants';
-import { formatPrice, pluralize, isNewShoe } from '../../utils';
+import { formatPrice, isNewShoe, pluralize } from '../../utils';
 import Spacer from '../Spacer';
+
 
 const ShoeCard = ({
   slug,
@@ -61,7 +61,9 @@ const ImageWrapper = styled.div`
   position: relative;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  width: 100%;
+`;
 
 const Row = styled.div`
   font-size: 1rem;
